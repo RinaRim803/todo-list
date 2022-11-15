@@ -1,15 +1,18 @@
 function Modal(props) {
-    return (
-      <div className='modal'>
-        <p>{props.text}</p>
-        <button className='btn btn--alt' onClick={props.onClose}>
-          Cancel
-        </button>
-        <button className='btn' onClick={props.onClose}>
-          Confirm
-        </button>
-      </div>
-    );
-  }
-  
-  export default Modal;
+    function cancelHandler() {
+        props.onCancel();
+    }
+
+    function confirmHandler() {
+        props.onConfirm();
+    }
+  return (
+    <div className="modal">
+      <p>Are u sure?</p>
+      <button className="btn btn--alt" onClick={cancelHandler}>Cancel</button>
+      <button className="btn" onClick={confirmHandler}>Confirm</button>
+    </div>
+  );
+}
+
+export default Modal;
