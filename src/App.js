@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
-import FavouritesPage from "./pages/Favourites";
+import FavoritessPage from "./pages/Favorites";
 import MainNavigation
  from "./components/layout/MainNavigation";
  
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AllMeetupsPage />} />
         <Route path="/new-meetup" element={<NewMeetupPage />} />
-        <Route path="/favourites" element={<FavouritesPage />} />
+        <Route path="/favorites" element={<FavoritessPage />} />
       </Routes>
     </div>
   );

@@ -6,4 +6,4 @@ const NewMeetup = () => {
   )
 }
 
-export default NewMeetup
+export default NewMeetup;
